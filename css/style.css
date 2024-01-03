@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&family=Lora:ital,wght@1,500;1,600&family=Montserrat:wght@300;400&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@1,300;1,400&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
+:root {
+  --loto: "Lato", sans-serif;
+  --lora: "Lora", serif;
+  --mon: "Montserrat", sans-serif;
+  --play: "Playfair Display", serif;
+  --robo: "Roboto", sans-serif;
+  --kaff: "Yanone Kaffeesatz", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a {
+  color: black;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-color: #282E40;
+  padding: 2rem 0;
+}
+
+#banner {
+  width: 100%;
+  padding: 4rem 0;
+}
+#banner h2 {
+  color: #5B6EFD;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+#banner h1 {
+  font-size: 3rem;
+}
+
+.naviagtion {
+  background-color: #FFFFFF;
+}
+.naviagtion .navbar .nav a {
+  transition: all 0.5s linear;
+}
+.naviagtion .navbar .nav a:hover {
+  color: #5B6EFD;
+}
+
+button {
+  padding: 20px 4rem;
+  background-color: black;
+  color: white;
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  transition: all 0.5s linear;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.about {
+  width: 100%;
+  padding: 4rem 0;
+}
+.about h2 {
+  font-size: 3rem;
+  color: #5B6EFD;
+}
+.about p {
+  letter-spacing: 1px;
+}
+
+.fruits {
+  width: 100%;
+  padding: 4rem 0;
+  width: 90%;
+  background-color: #282E40;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.fresh {
+  width: 100%;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+.fresh img {
+  transform: scale(1.5);
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+.fresh h2 {
+  font-size: 3rem;
+  color: #5B6EFD;
+  margin-bottom: 1rem;
+}
+.fresh p {
+  margin-bottom: 2rem;
+}
+
+.blog {
+  width: 100%;
+  padding: 4rem 0;
+  width: 90%;
+  margin-left: 8.4rem;
+  background-color: #282E40;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 3rem;
+}
+
+.contact {
+  width: 100%;
+  padding: 4rem 0;
+}
+.contact form input {
+  background-color: #282E40;
+  outline: #282E40;
+}
+.contact form textarea {
+  background-color: #282E40;
+}
+.contact form button {
+  padding: 20px 4rem;
+  background-color: aqua;
+  color: black;
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  transition: all 0.5s linear;
+}
+.contact form button:hover {
+  background-color: rgb(0, 132, 132);
+  color: white;
+}
+.contact img {
+  margin-left: -8rem;
+  transform: scale(1.5);
+  margin-top: 2rem;
+}
+
+.footer {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #282E40;
+  color: #FFFFFF;
+}
+.footer form input {
+  width: 100%;
+  height: 10vh;
+  text-indent: 10px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 2rem;
+}
+
+.copy {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B6EFD;
+  color: #FFFFFF;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

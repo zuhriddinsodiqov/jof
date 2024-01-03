@@ -1,0 +1,54 @@
+@media only screen and (max-width:768px) {
+    .naviagtion{
+       .navbar{
+        .logo{
+            margin: 0 auto;
+        }
+       }
+    }
+    .nav{
+    a{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+ }   
+ #banner{
+    img{
+        transform: scale(0.8);
+        margin-top: -2rem;
+        display: block;
+    }
+    h2{
+        margin-top: -4rem;
+     } 
+}
+button{
+    margin-bottom: -3rem;
+}
+.about{
+    p{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+.fruits{
+    padding: 0  2rem;
+    img{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+.fresh{
+    img{
+        transform: scale(1);
+    }
+}
+.blog{
+    margin: 0 auto;
+}
+}

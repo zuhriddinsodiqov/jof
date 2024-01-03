@@ -1,0 +1,147 @@
+@import "./_global";
+@mixin card (){
+    width: 100%;
+    padding: 4rem 0;
+}
+@mixin grid($repeat){
+    display: grid;
+    grid-template-columns: $repeat;
+}
+@mixin btn($bgc, $color, $bgcolor, $blue){
+    padding: 20px 4rem;
+    background-color: $bgc;
+    color: $color;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    transition: all 0.5s linear;
+    &:hover{
+        background-color: $bgcolor;
+        color: $blue;
+    }
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: #282E40;
+    padding: 2rem 0;
+}
+#banner{
+   @include card();
+   h2{
+    color: #5B6EFD;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+   }
+   h1{
+    font-size: 3rem;
+   }
+}
+.naviagtion{
+    background-color: #FFFFFF;
+    .navbar{
+        .nav{
+            a{
+                transition: all 0.5s linear;
+                &:hover{
+                    color: #5B6EFD;
+                }
+            }
+            .fa-bars{
+                display: none;
+            }
+        }
+    }
+}
+button{
+    @include btn(black, white, blue, white);
+}
+.about{
+    @include card();
+    h2{
+        font-size: 3rem;
+        color: #5B6EFD;
+    }
+    p{
+        letter-spacing: 1px;
+    }
+}
+.fruits{
+    @include card();
+    width: 90%;
+    background-color: #282E40;
+    color: #FFFFFF;
+    text-align: center;
+}
+.fresh{
+    @include card();
+    overflow: hidden;
+    img{
+        transform: scale(1.5);
+        margin-left: 5rem;
+        margin-top: 5rem;
+    }
+    h2{
+        font-size: 3rem;
+        color: #5B6EFD;
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+}
+.blog{
+    @include card();
+    width: 90%;
+    margin-left: 8.4rem;
+    background-color: #282E40;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 3rem;
+}
+.contact{
+    @include card();
+    form{
+     input{
+         background-color: #282E40;
+         outline: #282E40;
+     }
+     textarea{
+         background-color: #282E40;
+     }
+     button{
+         @include btn(aqua, black, rgb(0, 132, 132), white);
+     }
+    }
+    img{
+        margin-left: -8rem;
+        transform: scale(1.5);
+        margin-top: 2rem;
+    }
+}
+.footer{
+    @include card();
+    background-color: #282E40;
+    color: #FFFFFF;
+    form{
+        input{
+            width: 100%;
+            height: 10vh;
+            text-indent: 10px;
+            border: 0;
+            outline: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.copy{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B6EFD;
+    color: #FFFFFF;
+    text-align: center;
+}
